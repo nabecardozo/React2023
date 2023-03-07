@@ -1,0 +1,16 @@
+body {
+    background-color: aliceblue;
+}
+.inicio {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+.inicio > ul {
+    list-style: none;
+    align-items: center;
+    display: flex; 
+    gap: 1rem;
+}

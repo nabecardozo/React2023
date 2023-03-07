@@ -1,4 +1,6 @@
+import ItemListContainer from "./components/itemListConteiner";
 import  NavBar from "./components/NavBar/index";
+
 function App () {
 
   return (
@@ -7,6 +9,7 @@ function App () {
     }
 
      < NavBar />
+     <ItemListContainer greeting={"hola mundo"} />
   </div>
   );
 }

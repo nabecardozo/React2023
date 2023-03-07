@@ -1,0 +1,9 @@
+.CardWidget {
+    display: flex;
+    align-items: center;
+}
+
+  .CardWidget > img {
+    width: 40px;
+    height: 40px;
+}

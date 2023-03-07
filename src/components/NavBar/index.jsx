@@ -1,4 +1,7 @@
+import CardWidget from "../CardWidget";
 import "./navbar.css";
+
+
 
 function NavBar () {
 
@@ -15,9 +18,11 @@ function NavBar () {
                     <button>Cuidados y belleza</button>
                 </li>
             </ul>
+            <CardWidget />
         </div>
     );
 }
+
 
 
 
