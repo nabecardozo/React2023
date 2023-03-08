@@ -5,8 +5,6 @@ function App () {
 
   return (
   <div> 
-    {
-    }
 
      < NavBar />
      <ItemListContainer greeting={"hola mundo"} />
@@ -16,7 +14,7 @@ function App () {
 
 
 
-export default App
+export default App;
 
 
 

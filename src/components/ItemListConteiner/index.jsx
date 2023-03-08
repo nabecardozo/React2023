@@ -3,15 +3,8 @@
 function ItemListContainer ({greeting}) {
 
     return 
-        <div>{greeting}
-        </div>;
+        (<div><h1>{greeting}</h1></div>);
    
 }
-
-
-
-
-
-
 
 export default ItemListContainer;

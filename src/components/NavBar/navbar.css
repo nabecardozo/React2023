@@ -1,12 +1,12 @@
 body {
-    background-color: aliceblue;
+    background-color: rgb(128, 132, 136);
 }
 .inicio {
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: rgb(167, 172, 147);
 }
 .inicio > ul {
     list-style: none;
