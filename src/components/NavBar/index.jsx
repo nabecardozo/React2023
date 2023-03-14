@@ -3,20 +3,22 @@ import "./navbar.css";
 
 
 
-function NavBar () {
+function NavBar ({changeValue}) {
 
     return (
         <div className="inicio">
             <ul>
                 <li>
-                    <button>Farmacia</button>
+                    <a href="">Farmacia</a>
                 </li>
                 <li>
-                    <button>Cósmetica</button>
+                    <a href="">Cósmetica</a>
                 </li>
                 <li>
-                    <button>Cuidados y belleza</button>
+                    <a href="">Cuidados y belleza</a>
                 </li>
+
+                <button onClick={changeValue}>conteo</button>
             </ul>
             <CardWidget />
         </div>
