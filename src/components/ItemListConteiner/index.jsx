@@ -1,11 +1,31 @@
-import products from "../../mocks/products"
+import{useEffect, useState} from "react"
+//lista de prodcutos
+import ItemList from "../ItemList";
+import products from "../../mocks/products";
+
+
 
 function ItemListContainer({ greeting }) {
-  console.log(products);
+   const [products, setProducts] = useState([]);
+   
+   useEffect (( )=> {
+      const productsPromise = new Promise((resolve, reject)=>
+      setTimeout(() => resolve(products),2000)
+      );
+
+      productsPromise
+       .then((response)=> setProducts(response))
+       .catch((err)=>console.log(err));
+
+    },[]);
+
+    console.log({products});
+
+ 
     return (
-        <div style={{ fontSize: "3rem"}}>
-            <h1>{greeting}</h1>
-        </div>
+       <div>
+        <ItemList products={products} />
+       </div>
     );
 }
 
