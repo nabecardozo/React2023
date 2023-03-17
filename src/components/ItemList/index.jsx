@@ -1,10 +1,10 @@
 import Item from "../Item"
-function ItemList({ products }) {
+function ItemList({ Productos }) {
     return (
 
         <div>
         <ul>
-            {products.map((product, index) => ( <Item></Item>
+            {Productos.map((Productos, index) => ( <Item></Item>
           
          ))}
         </ul>

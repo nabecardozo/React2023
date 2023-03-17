@@ -1,7 +1,8 @@
-function Item(){
+
+function Item({Productos}){
     return (
         <div>
-        <p>informacion del item</p>
+        <p>{Productos.name}</p>
     </div>
     );
      
