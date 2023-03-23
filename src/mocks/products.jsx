@@ -1,4 +1,9 @@
-import imagenes from "../assets/imagenes/sublime.jpg";
+import farma from "../../src/imagenes/farma.jpg";
+import farma2 from "../../src/imagenes/farma2.png";
+import farma3 from "../../src/imagenes/farma3.jpg";
+import farma4 from "../../src/imagenes/farma4.jpg";
+import Pelo from "../../src/imagenes/pelo.png";
+import pelo1 from "../../src/imagenes/pelo1.png";
 
 export default [
     {
@@ -6,47 +11,48 @@ export default [
       name: "Product",
       description: "Lorem ipsum",
       stock: 5,
-      image: imagenes,
-      category: Shoes,
+      image:   farma,
+      category: "farma",
+      
     },
     {
       id: 2,
       name: "Product",
       description: "Lorem ipsum",
       stock: 5,
-      image: Shoes,
-      category: shoes,
+      image:   farma2,
+      category: "farma",
     },
     {
       id: 3,
       name: "Product",
       description: "Lorem ipsum",
       stock: 5,
-      image: Shoes,
-      category: shoes,
+      image:  farma3,
+      category: "farma",
     },
     {
       id: 4,
       name: "Product",
       description: "Lorem ipsum",
       stock: 5,
-      image: Shoes,
-      category: shoes,
+      image:  farma4,
+      category: "farma",
     },
     {
-      id: 4,
+      id: 5,
       name: "Product",
       description: "Lorem ipsum",
       stock: 5,
-      image: Shoes,
-      category: shoes,
+      image:   Pelo,
+      category: "pelo",
     },
     {
-      id: 4,
+      id: 6,
       name: "Product",
       description: "Lorem ipsum",
       stock: 5,
-      image: Shoes,
-      category: shoes,
+      image:   pelo1,
+      category: "pelo",
     },
   ];

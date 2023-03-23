@@ -1,16 +1,21 @@
 body {
-    background-color: rgb(128, 132, 136);
+    background-color: rgb(233, 237, 240);
 }
-.inicio {
+.navbar {
     width: 100%;
-    height: 80px;
+    background-color: rgb(151, 148, 148);
     display: flex;
     justify-content: space-between;
-    background-color: rgb(167, 172, 147);
-}
-.inicio > ul {
-    list-style: none;
     align-items: center;
-    display: flex; 
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    transition: all 0.5s ease;
+  }
+  
+  .navbar > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
     gap: 1rem;
-}
+  }
