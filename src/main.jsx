@@ -1,17 +1,20 @@
-
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //rootes
+import Layout from "./components/Layout/Layout";
 import ItemRoot from "./Routes/Item";
 import Root from "./Routes/Root";
+import Cart from "./Routes/cart";
 
 
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 
 
 const router = createBrowserRouter([
+ {element: <Layout/>, children:[
   {
     path: "/",
     element: <Root/>,
@@ -26,16 +29,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/cart",
-    element: <div>Hello world!</div>,
+    element: <Cart/>,
   },
-  {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
-  {
-    path: "/checkout",
-    element: <div>Hello world!</div>,
-  },
+  
+  //{
+   // path: "/checkout",
+    //element: <div>Hello world!</div>,
+  //},
+ ],
+ },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

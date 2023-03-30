@@ -1,5 +1,4 @@
 import ItemListContainer from "../components/ItemListContainer";
-import NavBar from "../components/NavBar";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useParams } from "react-router-dom";
 
@@ -13,7 +12,7 @@ function Root() {
 
   return (
     <div>
-      <NavBar />
+     
       <ItemListContainer isCategoryRoute={isCategoryRoute}categoryId={parametro.id} />
      
     </div>

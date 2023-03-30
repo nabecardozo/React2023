@@ -1,0 +1,9 @@
+ul.lista-productos {
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+.contenedor-productos {
+    padding: 5rem;
+}
