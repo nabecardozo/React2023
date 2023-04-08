@@ -1,9 +1,9 @@
-import NavBar from "../components/NavBar";
+
 
 function Cart (){
     return (
         <div>
-            <NavBar/>
+           cart view
         </div>
     );
 }

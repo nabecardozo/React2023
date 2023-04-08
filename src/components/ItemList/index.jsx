@@ -5,12 +5,12 @@ function ItemList({ products }) {
   return (
     <div className="contenedor-productos">
       <ul className="lista-productos">
-        {products.map((product, index) => (
-          <Item product={product} key={product.id} />
+        {products.map((products, index) => (
+          <Item products={products} key={products.id} />
         ))}
       </ul>
     </div>
-  );
+  );    
 }
 
 export default ItemList;

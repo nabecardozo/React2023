@@ -1,22 +1,22 @@
 body {
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(224, 221, 221);
 }
-/*
+
 .navbar {
     width: 100%;
-    background-color: rgb(151, 148, 148);
+    background-color: rgb(176, 175, 175);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 20;
-    transition: all 0.5s ease;
+    transition: all 0.10s ease;
   }
+ .link {
+  color: rgb(255, 0, 0);
+  display: flex;
+  font-size: 1.5rem;
+    
+ }
   
-  .navbar > ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 1rem;
-  }

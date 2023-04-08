@@ -1,11 +1,23 @@
+import { useContext } from "react";
 import "./CardWidget.css";
-function CardWidget () {
+import { Link } from "react-router-dom";
+import { Context } from "../../Context/Context";
+
+
+function CardWidget() {
+    const { productsAdded } = useContext(Context);
+
 
     return (
-        <div className="CardWidget">
-            <img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png"/>
-            <span>3</span>
-        </div>
+        <Link to="/cart">
+            <button className="CardWidget">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/2838/2838895.png" />
+                {productsAdded.length}
+
+               
+            </button>
+        </Link>
     );
 }
 
@@ -16,3 +28,6 @@ function CardWidget () {
 
 
 export default CardWidget;
+
+
+

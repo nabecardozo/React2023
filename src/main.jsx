@@ -10,38 +10,48 @@ import Root from "./Routes/Root";
 import Cart from "./Routes/cart";
 
 
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
+import { createBrowserRouter, RouterProvider, } from "react-router-dom";
+import { CustomProvider } from "./Context/Context";
 
 
 const router = createBrowserRouter([
- {element: <Layout/>, children:[
   {
     path: "/",
-    element: <Root/>,
+    element: <Layout />,
+    children: [
+
+
+      {
+        path: "/",
+        element: <Root />,
+      },
+      {
+        path: "/category/:id",
+        element: <Root />,
+      },
+      {
+        path: "/item/:id",
+        element: <ItemRoot />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+
+      //{
+      // path: "/checkout",
+      //element: <div>Hello world!</div>,
+      //},
+    ],
   },
-  {
-    path: "/category/:id",
-    element: <Root/>,
-  },
-  {
-    path: "/item/:id",
-    element: <ItemRoot/>,
-  },
-  {
-    path: "/cart",
-    element: <Cart/>,
-  },
-  
-  //{
-   // path: "/checkout",
-    //element: <div>Hello world!</div>,
-  //},
- ],
- },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-     <RouterProvider router={router} />
+    <CustomProvider>
+
+      <RouterProvider router={router} />
+
+    </CustomProvider>
   </React.StrictMode>
 );
