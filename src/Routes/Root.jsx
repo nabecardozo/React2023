@@ -18,7 +18,8 @@ function Root() {
     <div>
       <CustomProvider>
         <Container>
-          <ItemListContainer isCategoryRoute={isCategoryRoute} categoryId={parametro.id} />
+          <ItemListContainer isCategoryRoute={isCategoryRoute}
+           categoryId={parametro.id} />
         </Container>
       </CustomProvider>
 

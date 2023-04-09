@@ -32,7 +32,7 @@ export function CustomProvider({ children }) {
     function clear() {}
 
     function isInCart(products) {
-        return productsAdded.some((productAdded) => productAdded.id === products.id);
+        return productsAdded.some((productsAdded) => productsAdded.id === products.id);
       }
 
 

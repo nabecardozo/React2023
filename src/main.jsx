@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Layout from "./components/Layout/Layout";
 import ItemRoot from "./Routes/Item";
 import Root from "./Routes/Root";
-import Cart from "./Routes/cart";
+import Cart from "./Routes/Cart";
 
 
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";

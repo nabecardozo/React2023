@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
-import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetail";
+import ItemDetailContainer from "../components/ItemDetailContainer";
 import {doc, getDoc, getFirestore} from 'firebase/firestore'
 
 
