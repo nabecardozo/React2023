@@ -1,16 +1,32 @@
-import { useContext } from "react";
-import { Context } from "../../Context/Context";
-
-
+import {doc, getDoc, getFirestore} from "firebase/firestore";
+import { useEffect, useState } from "react";
+import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 function ItemDetailContainer(){
-    const { onAdd, onRemove } = useContext(Context);
+    const [products, setProducts] = useState(null);
+    const params = useParams()
+
+ useEffect (() => {
+  const db = getFirestore()
+  const itemRef = doc(db, 'items', params.id);
+
+  getDoc(itemRef).then((snapshot)=>{
+    if (snapshot.exists()) {
+      setProducts({id: snapshot.id, ...snapshot.data()})
+   console.log(snapshot.data());
+
+    }
+  }).catch((error)=> console.log({error}))
+
+},[])
+  
+if (!products) {
+  return <p>loging...</p>;
+   }
     return(
         <div>
-        
-        <button onClick={onAdd}>Add to cart</button> 
-      <button onClick={onRemove}>Remove from cart</button> 
-      
+        <ItemDetail products={products} />
         </div>
     );
 }

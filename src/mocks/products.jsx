@@ -8,17 +8,17 @@ import pelo1 from "../../src/imagenes/pelo1.png";
 export default [
     {
       id: 1,
-      name: "ACTRON",
+      title: "ACTRON",
       description: "Desinflamatorio rapida accion",
       stock: 5,
-      precio: 1000,
-      image:   farma,
+      precio: 2000,
+      image:  farma,
       category: "farma",
       
     },
     {
       id: 2,
-      name: "DERMAGLOS",
+      title: "DERMAGLOS",
       description: "Crema humectante",
       stock: 5,
       precio: 1000,
@@ -27,7 +27,7 @@ export default [
     },
     {
       id: 3,
-      name: "CURFLEX",
+      title: "CURFLEX",
       description: "Regenerador de cartilago",
       stock: 5,
       precio: 1000,
@@ -36,25 +36,25 @@ export default [
     },
     {
       id: 4,
-      name: "TAFIROL",
+      title: "TAFIROL",
       description: "Analgesico",
       stock: 5,
-      precio: 1000,
+      precio: 1500,
       image:  farma4,
       category: "farma",
     },
     {
       id: 5,
-      name: "Semi Lino",
+      title: "Semi Lino",
       description: "shampoo",
       stock: 5,
       precio: 1000,
       image:   Pelo,
       category: "pelo",
     },
-    {
+    { 
       id: 6,
-      name: "Alfaparf",
+      title: "Alfaparf",
       description: "shampo",
       stock: 5,
       precio: 1000,

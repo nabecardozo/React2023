@@ -14,6 +14,20 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import { CustomProvider } from "./Context/Context";
 
 
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAqMYppkWb3jWQ9PEJg0RgqGIflfab5oFU",
+  authDomain: "farmacia-nair.firebaseapp.com",
+  projectId: "farmacia-nair",
+  storageBucket: "farmacia-nair.appspot.com",
+  messagingSenderId: "75700094850",
+  appId: "1:75700094850:web:e799a9eb2d25ccff97319b"
+};
+
+
+initializeApp(firebaseConfig);
+
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,11 +1,15 @@
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import ItemDetailContainer from "../components/ItemDetailContainer/ItemDetail";
+import {doc, getDoc, getFirestore} from 'firebase/firestore'
+
 
 function ItemRoot() {
+  
   return (
     <div>
      <Container>
-     <ItemDetailContainer/>
+     <ItemDetailContainer  />
      </Container>
       
     </div>
